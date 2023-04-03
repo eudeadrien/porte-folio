@@ -26,7 +26,10 @@
   overflow: hidden;
   margin-left: 15%;
   margin-right: 15%;
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 .diapo h1 {
@@ -92,4 +95,10 @@ header {
 .envoi {
   display: flex;
   flex-direction: column;
+}
+.heures {
+  margin-left: auto;
+  padding: 5px 5px ;
+  border: solid 1px;
+  border-radius: 5px;
 }
