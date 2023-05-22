@@ -47,9 +47,47 @@
     <div class="popup" id="popup-1">
       <div class="overlay"></div>
       <div class="pop-content">
-        <div class="close-btn" onclick="togglePopup()">&times;</div>
-        <h1>test Popup</h1>
-        <p>ceci est une popup en html css</p>
+        <div class="close-btn" onclick="togglePopup1()">&times;</div>
+        <br>
+        <h1>Wireless Network</h1>
+        <p>Project carried out during my IUT, in groups of eight we were equipped with a switch, a router, two Wi-Fi terminals and an IP telephone. The goal is to configure them by hand, and to add an IPBX via virtual machine, in order to obtain a wireless enterprise infrastructure.</p>
+      </div>
+    </div>
+    <div class="popup" id="popup-2">
+      <div class="overlay"></div>
+      <div class="pop-content">
+        <div class="close-btn" onclick="togglePopup2()">&times;</div>
+        <br>
+        <h1>Personal Website</h1>
+        <p>Using my slight knowledge of HTML and CSS, this field has always appealed to me and I wanted to learn more. I decided to challenge myself to create my first "real" personal website, in order to introduce myself and promote myself to potential recruiters. You can find my site at this <a href="https://eudeadrien.000webhostapp.com/">URL</a>.</p>
+      </div>
+    </div>
+    <div class="popup" id="popup-3">
+      <div class="overlay"></div>
+      <div class="pop-content">
+        <div class="close-btn" onclick="togglePopup3()">&times;</div>
+        <br>
+        <h1>Enterprise Network</h1>
+        <p>This project was the first I did at CESI, along with three other students. This network project was based on many different notions, whether server administration, configuration of an AD (with all its rules and GPO), installation of redundant router (firewall and DMZ rules) , but also supervision (Centreon). We did very well on this project and got an A grade.
+        </p>
+      </div>
+    </div>
+    <div class="popup" id="popup-4">
+      <div class="overlay"></div>
+      <div class="pop-content">
+        <div class="close-btn" onclick="togglePopup4()">&times;</div>
+        <br>
+        <h1>Easysave</h1>
+        <p>And finally, my last project for today, a big data project. During this project, the CHU group (Cloud Healthcare Unit) therefore asked us to help it set up its own data warehouse in order to exploit a large amount of data. After performing data processing jobs via Talend on the source files (PostgreSQL, xls, csv) provided to us, we had to create partitioned and bucketed tables to optimize the query. And finally a data structuring in PowerBI was requested. Another successful project with an A.</p>
+      </div>
+    </div>
+    <div class="popup" id="popup-5">
+      <div class="overlay"></div>
+      <div class="pop-content">
+        <div class="close-btn" onclick="togglePopup5()">&times;</div>
+        <br>
+        <h1>Big Data</h1>
+        <p>And finally, my last project for today, a big data project. During this project, the CHU group (Cloud Healthcare Unit) therefore asked us to help it set up its own data warehouse in order to exploit a large amount of data. After performing data processing jobs via Talend on the source files (PostgreSQL, xls, csv) provided to us, we had to create partitioned tables and buckets to optimize requests. And finally a data structuring in PowerBI was requested. Another successful project with an A.</p>
       </div>
     </div>
 
@@ -57,62 +95,62 @@
     <h1 class="mosaique_title">Projects</h1>
     <div class="mosaique_project">
       <figure class="pr1">
-        <a href="#" class="imgbox">
+        <a href="#" onclick="togglePopup1()" class="imgbox">
           <img src="Images/network_wireless.jpg" class="im" title="réseau">
         </a>
         <div class="content-box">
           <div class="content">
-            <h3>Réseau</h3>
-            <p>test projet réseau</p>
+            <h3>Wireless Network</h3>
+            <p>Setting up a corporate wireless network</p>
           </div>
         </div>
       </figure>
 
       <figure class="pr2">
-        <a href="#" class="imgbox">
+        <a href="#" onclick="togglePopup2()" class="imgbox">
           <img src="Images/developpeur-web.jpg" class="im" title="réseau">
         </a>
         <div class="content-box">
           <div class="content">
-            <h3>Site Web</h3>
-            <p>test projet dev</p>
+            <h3>Personal Website</h3>
+            <p>Creation of my first personal website</p>
           </div>
         </div>
       </figure>
 
       <figure class="pr3">
-        <a href="#" class="imgbox">
+        <a href="#" onclick="togglePopup3()"class="imgbox">
           <img src="Images/enterprise_network.jpeg" class="im" title="réseau">
         </a>
         <div class="content-box">
           <div class="content">
-            <h3>Archi entreprise</h3>
-            <p>test projet reseau</p>
+            <h3>Enterprise Network</h3>
+            <p>Design of a complete enterprise network architecture</p>
           </div>
         </div>
       </figure>
     </div>
     <div class="mosaique_project_2">
       <figure class="pr4">
-        <a href="#" class="imgbox">
+        <a href="#" onclick="togglePopup4()" class="imgbox">
           <img src="Images/easysave.PNG" class="im" title="réseau">
         </a>
         <div class="content-box">
           <div class="content">
             <h3>Easysave</h3>
-            <p>test projet java</p>
+            <p>Development of backup job software</p>
           </div>
         </div>
       </figure>
 
       <figure class="pr5">
-        <a href="#" class="imgbox">
+        <a href="#" onclick="togglePopup5()" class="imgbox">
           <img src="Images/BigData.jpg" class="im" title="réseau">
         </a>
         <div class="content-box">
           <div class="content">
             <h3>Big Data</h3>
-            <p>test projet bdd</p>
+            <p>Processing and reporting of data from a hospital</p>
           </div>
         </div>
       </figure>
@@ -123,16 +161,12 @@
         </a>
         <div class="content-box">
           <div class="content">
-            <h3>Coming soon</h3>
+            <p>Coming soon</p>
           </div>
         </div>
       </figure>
 
     </div>
-    <button onclick="togglePopup()">Show popup</button>
-  </div>
-
-  <div class="projects">
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
